@@ -37,6 +37,6 @@
     "no-underscore-dangle": 0,
     "no-unexpected-multiline": 0,
     "no-unused-vars": "error",
-    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/indent": ["error", 2]
   }
 }
