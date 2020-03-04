@@ -9,10 +9,9 @@
  */
 
 /* eslint-disable */
-const { addLocaleData } = require('react-intl');
-const en = require('react-intl/locale-data/en');
-const ru = require('react-intl/locale-data/ru');
-const uk = require('react-intl/locale-data/uk');
+require('@formatjs/intl-relativetimeformat/dist/locale-data/en');
+require('@formatjs/intl-relativetimeformat/dist/locale-data/uk');
+require('@formatjs/intl-relativetimeformat/dist/locale-data/ru');
 
 const enTranslationMessages = require('./translations/en.json');
 const ruTranslationMessages = require('./translations/ru.json');
@@ -20,9 +19,7 @@ const ukTranslationMessages = require('./translations/uk.json');
 
 /* eslint-enable */
 
-addLocaleData([...en, ...ru, ...uk]);
-
-export const DEFAULT_LOCALE = 'ru';
+export const DEFAULT_LOCALE = 'en';
 export const DEFAULT_DATE_FORMAT = 'DD/MM/YYYY';
 
 export const formatTranslationMessages = (
